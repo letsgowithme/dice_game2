@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+@media screen and (min-width: 375px) {
+
+    *,
+    body {
+        box-sizing: border-box;
+        font-family: 'Libre Baskerville', serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        text-align: center;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .frame {
+        border: none;
+        width: 100%;
+        height: 100vh;
+        border: 10px solid rgb(165, 103, 28);
+    }
+
+    #headerZone {
+        padding-top: 20px;
+    }
+
+    .zone {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10% 5%;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #buttonNewGame {
+        margin-top: 2%;
+        display: flex;
+        background: none;
+        border: none;
+        padding: 10px 20px 10px 10px;
+    }
+
+    #buttonNewGame img {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+    }
+
+    h2,
+    #buttonNewGame,
+    #buttonRollDice,
+    #buttonHold {
+        color: rgb(98, 98, 106);
+    }
+
+    #buttonRollDice:hover,
+    #buttonHold:hover,
+    #buttonNewGame:hover {
+        border: none;
+        background: green;
+        color: white;
+    }
+
+    h1 {
+        font-size: 1em;
+        margin-top: 2%;
+        color: rgb(204, 204, 218);
+    }
+
+    #titlePlayer1,
+    #titlePlayer2 {
+        font-size: 1em;
+    }
+
+    #headerZone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #message {
+        font-size: 1em;
+        padding: 45px 0;
+        color: green;
+        height: 40px;
+        margin-bottom: 10%;
+    }
+
+    #statementPlayer1,
+    #statementPlayer2 {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: red;
+        margin-left: 10px;
+        margin-top: 4px;
+        opacity: 0;
+    }
+
+    .player {
+        display: flex;
+        padding: 10px;
+    }
+
+    .h5 {
+        padding-bottom: 10px;
+        font-size: 0.6em;
+    }
+
+    #globalPlayer1,
+    #globalPlayer2 {
+        font-size: 2em;
+    }
+
+    .current {
+        background-color: red;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #rollDiceImg,
+    #holdImg {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    #buttonRollDice,
+    #buttonHold {
+        border: none;
+        background: none;
+    }
+
+    #buttonRollDice:hover,
+    #buttonHold:hover {
+        border: none;
+        background: green;
+        color: white;
+    }
+
+    #buttonRollDice {
+        padding: 5px 0;
+    }
+
+    #buttonHold {
+        width: 140px;
+        margin-top: 10%;
+        padding: 10px 0;
+    }
+
+    #bgZone1,
+    #bgZone2 {
+        width: 50%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        z-index: -1;
+        background-color: rgba(221, 221, 224, 0.525);
+        display: none;
+    }
+
+    #bgZone1 {
+        position: absolute;
+        left: 0;
+    }
+
+    #bgZone2 {
+        right: 0;
+        position: absolute;
+    }
+}
+
+/* @media screen and (min-width: 820px) */
+@media screen and (min-width: 820px) {
+
+    .frame {
+        border: none;
+        width: 100%;
+        height: 100vh;
+        border: 20px solid rgb(165, 103, 28);
+    }
+
+    #buttonNewGame {
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        padding: 10px 20px 10px 10px;
+    }
+
+    #buttonNewGame img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+    }
+
+    h2,
+    #buttonNewGame,
+    #buttonRollDice,
+    #buttonHold {
+        color: rgb(98, 98, 106);
+    }
+
+    h1 {
+        font-size: 1.9em;
+        margin-top: 2%;
+        color: rgb(204, 204, 218);
+    }
+
+    #titlePlayer1,
+    #titlePlayer2 {
+        font-size: 1.8em;
+    }
+
+    .zone {
+        padding: 60px 10px;
+    }
+
+    #message {
+        font-size: 2em;
+        padding: 50px 0;
+        color: green;
+        height: 50px;
+        margin-bottom: 10%;
+    }
+
+
+    .h5 {
+        padding-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    #globalPlayer1,
+    #globalPlayer2 {
+        font-size: 3em;
+    }
+
+    .current {
+        background-color: red;
+        padding: 20px;
+        margin: 10px;
+        font-size: 1em;
+    }
+
+    #rollDiceImg,
+    #holdImg {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+
+    #buttonRollDice,
+    #buttonHold {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #buttonRollDice {
+        padding: 10px;
+    }
+
+    #buttonHold {
+        width: 200px;
+        margin-top: 10%;
+        padding: 10px;
+    }
+
+}
+
+/* @media screen and (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .frame {
+        width: 80%;
+    }
+
+    #bgZone1,
+    #bgZone2 {
+        margin: 0 10%;
+        width: 40%;
+        height: 95vh;
+        z-index: -1;
+        display: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .zone {
+        padding-top: 30px;
+        padding-bottom: 2%;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #message {
+        padding-top: 30px;
+        padding-bottom: 2%;
+    }
+
+
+}
